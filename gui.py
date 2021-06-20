@@ -12,7 +12,7 @@ from utils import clean_text
 
 
 class MyApp(App):
-    def __init__(self, file_path: str = "TODO.csv"):
+    def __init__(self, file_path: str = ".\subjects-questions.csv"):
         App.__init__(self)
         self.output = ''
         self.file_path = file_path
