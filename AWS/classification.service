@@ -1,0 +1,12 @@
+[Unit]
+Description=My classification service
+After=multi-user.target
+[Service]
+Type=simple
+Restart=always
+WorkingDirectory=/home/ubuntu/nlp-classification
+ExecStart=/usr/bin/python3 /home/ubuntu/nlp-classification/FlaskServerEli.py
+#ExecStart=/home/ubuntu/nlp-classification/classification.service.sh
+[Install]
+WantedBy=multi-user.target
+
